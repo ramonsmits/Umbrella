@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA5F2437-041E-48F0-8433-43B8F50AFC78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nVentive.Umbrella.Tests</RootNamespace>
+    <AssemblyName>nVentive.Umbrella.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="xunit, Version=1.0.3.1299, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunitext, Version=1.0.3.1299, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\xunitext.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionsFixture.cs" />
+    <Compile Include="Binding\CurryExtensionsFixture.cs" />
+    <Compile Include="Clock\FreezingClock.cs" />
+    <Compile Include="Collections\CollectionAdapterFixture.cs" />
+    <Compile Include="Collections\CollectionExtensionsFixture.cs" />
+    <Compile Include="Collections\DictionaryExtensionsFixture.cs" />
+    <Compile Include="Collections\EnumerableExtensionsFixture.cs" />
+    <Compile Include="Collections\GroupingExtensionsFixture.cs" />
+    <Compile Include="Collections\LazyListFixture.cs" />
+    <Compile Include="Collections\ListAdapterFixture.cs" />
+    <Compile Include="Collections\ListDecoratorFixture.cs" />
+    <Compile Include="Collections\ListExtensionsFixture.cs" />
+    <Compile Include="Collections\StackExtensionsFixture.cs" />
+    <Compile Include="Collections\SynchronizedDictionaryFixture.cs" />
+    <Compile Include="Components\ComponentFixture.cs" />
+    <Compile Include="Composite\CompositeExtensionsFixture.cs" />
+    <Compile Include="Conditions\AndConditionFixture.cs" />
+    <Compile Include="Conditions\NotConditionFixture.cs" />
+    <Compile Include="Conditions\OrConditionFixture.cs" />
+    <Compile Include="Containers\ContainerExtensionsFixture.cs" />
+    <Compile Include="Containers\ContainerFixture.cs" />
+    <Compile Include="Contracts\CompositeContractFixture.cs" />
+    <Compile Include="Contracts\ContractExtensionsFixture.cs" />
+    <Compile Include="Contracts\NameContractFixture.cs" />
+    <Compile Include="Contracts\TypeContractFixture.cs" />
+    <Compile Include="Conversion\ConversionExtensionsFixture.cs" />
+    <Compile Include="Conversion\TypeConverterConversionStrategyFixture.cs" />
+    <Compile Include="Conversion\EnumConversionStrategyFixture.cs" />
+    <Compile Include="Equality\EqualityExtensionsFixture.cs" />
+    <Compile Include="Events\EventExtensionsFixture.cs" />
+    <Compile Include="Events\ObservableExtensionsFixture.cs" />
+    <Compile Include="Expressions\ExpressionExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\ByteTimeSpanExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\DateTimeCalendarExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\DayOfWeekExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\DefaultDateTimeCalendarExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\DoubleTimeSpanExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\Int16TimeSpanExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\Int32TimeSpanExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\Int64TimeSpanExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\SingleTimeSpanExtensionsFixture.cs" />
+    <Compile Include="Extensions\Calendar\TimeSpanCalendarExtensionsFixture.cs" />
+    <Compile Include="Extensions\DateTimeExtensionsFixture.cs" />
+    <Compile Include="Extensions\FuncMemoizeExtensionsFixture.cs" />
+    <Compile Include="Extensions\ObjectExtensionsFixture.cs" />
+    <Compile Include="Extensions\StringExtensionsFixture.cs" />
+    <Compile Include="Extensions\ValueType\ValueSupportFixture.cs" />
+    <Compile Include="Factories\ArgumentsContractFixture.cs" />
+    <Compile Include="Factories\WrapContractFixture.cs" />
+    <Compile Include="FuncsFixture.cs" />
+    <Compile Include="KeyFixture.cs" />
+    <Compile Include="Locator\ThreadLocalServiceLocatorFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickStartFixture.cs" />
+    <Compile Include="Reflection\FieldInfoExtensionsFixture.cs" />
+    <Compile Include="Reflection\MethodInfoExtensionsFixture.cs" />
+    <Compile Include="Reflection\ReflectionFixture.cs" />
+    <Compile Include="Reflection\TypeExtensionsFixture.cs" />
+    <Compile Include="RegularExpressions\MatchExtensionsFixture.cs" />
+    <Compile Include="Security\AuthorizationServiceExtensionsFixture.cs" />
+    <Compile Include="Security\ThreadPrincipalSourceFixture.cs" />
+    <Compile Include="Serialization\SerializationExtensionPointFixture.cs" />
+    <Compile Include="Sources\CompositeSourceFixture.cs" />
+    <Compile Include="Sources\DisposableSourceFixture.cs" />
+    <Compile Include="Sources\EnumerableSourceFixture.cs" />
+    <Compile Include="Sources\EnvironmentSourceFixture.cs" />
+    <Compile Include="Sources\LazySourceFixture.cs" />
+    <Compile Include="Sources\MessageSourceFixture.cs" />
+    <Compile Include="Sources\ReadOnlySourceFixture.cs" />
+    <Compile Include="Sources\ReflectionSourceFixture.cs" />
+    <Compile Include="Sources\SourceAdapterFixture.cs" />
+    <Compile Include="Sources\SourceExtensionsFixture.cs" />
+    <Compile Include="Sources\SourceFixture.cs" />
+    <Compile Include="Sources\ThreadLocalSourceFixture.cs" />
+    <Compile Include="Sources\WeakSourceFixture.cs" />
+    <Compile Include="Threading\SynchronizableFixture.cs" />
+    <Compile Include="Validation\StringValidationExtensionsFixture.cs" />
+    <Compile Include="Values\ReflectionValueFixture.cs" />
+    <Compile Include="Values\ValueBindingFixture.cs" />
+    <Compile Include="Values\ValueExtensionsFixture.cs" />
+    <Compile Include="Values\ValueFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Umbrella\Umbrella.csproj">
+      <Project>{C59AC9D4-2B3B-41CC-B177-FC193B2EAD97}</Project>
+      <Name>Umbrella</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Decorator\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Iterators\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

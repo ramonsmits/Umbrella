@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2750B060-67EE-43BB-B377-830D5ED76A6D}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Umbrella</RootNamespace>
+    <AssemblyName>Umbrella</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug-Silverlight\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release-Silverlight\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions.cs" />
+    <Compile Include="ApplicationException.cs" />
+    <Compile Include="Binding\CurryExtensions.cs" />
+    <Compile Include="Calendar\Clock.cs" />
+    <Compile Include="Calendar\IClock.cs" />
+    <Compile Include="Calendar\SystemClock.cs" />
+    <Compile Include="Collections\CollectionAdapter.cs" />
+    <Compile Include="Collections\CollectionExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\DictionaryExtensions.cs" />
+    <Compile Include="Collections\LazyList.cs" />
+    <Compile Include="Collections\ListAdapter.cs" />
+    <Compile Include="Collections\ListDecorator.cs" />
+    <Compile Include="Collections\StackExtensions.cs" />
+    <Compile Include="Collections\SynchronizedDictionary.cs" />
+    <Compile Include="Components\IComponent.cs" />
+    <Compile Include="CompositionType.cs" />
+    <Compile Include="Containers\Container.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Containers\ContainerExtensionPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Containers\ContainerExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Containers\ContentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Containers\IContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contexts\ContextScope.Generic.cs" />
+    <Compile Include="Contexts\ContextScopeMediator.Generic.cs" />
+    <Compile Include="Contexts\ContextScopeMediatorBase.Generic.cs" />
+    <Compile Include="Contexts\IContextScope.cs" />
+    <Compile Include="Contexts\IContextScope.Generic.cs" />
+    <Compile Include="Contexts\IContextScopeHandler.Generic.cs" />
+    <Compile Include="Contexts\IContextScopeMediator.cs" />
+    <Compile Include="Contexts\IContextScopeMediator.Generic.cs" />
+    <Compile Include="Conversion\TypeConverterConversionStrategy.cs" />
+    <Compile Include="Edm\EntitySetAttribute.cs" />
+    <Compile Include="Edm\EntitySetExtensions.cs" />
+    <Compile Include="Events\ExtendedPropertyChangedEventArgs.cs" />
+    <Compile Include="Extensions\Calendar\ByteTimeSpanExtensions.cs" />
+    <Compile Include="Extensions\Calendar\DateTimeCalendarExtensions.cs" />
+    <Compile Include="Extensions\Calendar\DayOfWeekExtensions.cs" />
+    <Compile Include="Extensions\Calendar\DefaultDateTimeCalendarExtensions.cs" />
+    <Compile Include="Extensions\Calendar\DoubleTimeSpanExtensions.cs" />
+    <Compile Include="Extensions\Calendar\IDateTimeCalendarExtensions.cs" />
+    <Compile Include="Extensions\Calendar\Int16TimeSpanExtensions.cs" />
+    <Compile Include="Extensions\Calendar\Int32TimeSpanExtensions.cs" />
+    <Compile Include="Extensions\Calendar\Int64TimeSpanExtensions.cs" />
+    <Compile Include="Extensions\Calendar\SingleTimeSpanExtensions.cs" />
+    <Compile Include="Extensions\Calendar\TimeSpanCalendarExtensions.cs" />
+    <Compile Include="Factories\FactoryBase.cs" />
+    <Compile Include="Factories\SingletonContract.cs" />
+    <Compile Include="Conversion\ConversionExtensionPoint.cs" />
+    <Compile Include="Conversion\ConversionExtensions.cs" />
+    <Compile Include="Conversion\DefaultConversionExtensions.cs" />
+    <Compile Include="Conversion\EnumConversionStrategy.cs" />
+    <Compile Include="Conversion\IConversionExtensions.cs" />
+    <Compile Include="Conversion\IConversionStrategy.cs" />
+    <Compile Include="Equality\FuncEqualityComparer.cs" />
+    <Compile Include="Expressions\ExpressionFactory.cs" />
+    <Compile Include="Expressions\PredicateExpression.cs" />
+    <Compile Include="Expressions\PredicateExpression.Generic.cs" />
+    <Compile Include="Extensions\ExtensionsProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extensions\StringBuilderExtensions.cs" />
+    <Compile Include="Extensions\TextWriterExtensions.cs" />
+    <Compile Include="DateTimeUnit.cs" />
+    <Compile Include="Actions.Generic.cs" />
+    <Compile Include="Collections\EnumerableExtensions.cs" />
+    <Compile Include="Collections\GroupingExtensions.cs" />
+    <Compile Include="Collections\ListExtensions.cs" />
+    <Compile Include="Equality\EqualityExtensionPoint.cs" />
+    <Compile Include="Equality\EqualityExtensions.cs" />
+    <Compile Include="Fields.cs" />
+    <Compile Include="IIdentifiable.cs" />
+    <Compile Include="Extensions\FuncMemoizeExtensions.cs" />
+    <Compile Include="Locator\IServiceLocator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Locator\IServiceLocatorExtensions.cs" />
+    <Compile Include="Locator\NullServiceLocator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Locator\ServiceLocator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Locator\ServiceLocatorExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Locator\ThreadLocalServiceLocator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Params.cs" />
+    <Compile Include="Factories\WrapContract.cs" />
+    <Compile Include="ILoadable.cs" />
+    <Compile Include="Pair.cs" />
+    <Compile Include="Components\Component.cs" />
+    <Compile Include="Conditions\AndCondition.cs" />
+    <Compile Include="Conditions\ConditionExtensions.cs" />
+    <Compile Include="Conditions\ICompositeCondition.cs" />
+    <Compile Include="Conditions\OrCondition.cs" />
+    <Compile Include="Contracts\CompositeContract.cs" />
+    <Compile Include="Contracts\ContractExtensions.cs" />
+    <Compile Include="Contracts\IContract.cs" />
+    <Compile Include="Contracts\NameContract.cs" />
+    <Compile Include="Contracts\TypeContract.cs" />
+    <Compile Include="Contracts\SourceContract.cs" />
+    <Compile Include="Funcs.cs" />
+    <Compile Include="Events\EventExtensions.cs" />
+    <Compile Include="Events\EventMessage.cs" />
+    <Compile Include="Events\Observable.cs" />
+    <Compile Include="Events\ObservableExtensions.cs" />
+    <Compile Include="Conditions\CompositeCondition.cs" />
+    <Compile Include="Conditions\NotCondition.cs" />
+    <Compile Include="Expressions\Builder\IPredicateBuilder.cs" />
+    <Compile Include="Expressions\Expressions.cs" />
+    <Compile Include="Expressions\EditableBinaryExpression.cs" />
+    <Compile Include="Expressions\EditableConditionalExpression.cs" />
+    <Compile Include="Expressions\EditableConstantExpression.cs" />
+    <Compile Include="Expressions\EditableElementInit.cs" />
+    <Compile Include="Expressions\EditableExpression.cs" />
+    <Compile Include="Expressions\EditableExpressionCollection.cs" />
+    <Compile Include="Expressions\EditableExpressionExtensions.cs" />
+    <Compile Include="Expressions\EditableInvocationExpression.cs" />
+    <Compile Include="Expressions\EditableLambdaExpression.cs" />
+    <Compile Include="Expressions\EditableLambdaExpression.Generic.cs" />
+    <Compile Include="Expressions\EditableListInitExpression.cs" />
+    <Compile Include="Expressions\EditableMemberExpression.cs" />
+    <Compile Include="Expressions\EditableMemberInitExpression.cs" />
+    <Compile Include="Expressions\EditableMethodCallExpression.cs" />
+    <Compile Include="Expressions\EditableNewArrayExpression.cs" />
+    <Compile Include="Expressions\EditableNewExpression.cs" />
+    <Compile Include="Expressions\EditableParameterExpression.cs" />
+    <Compile Include="Expressions\EditableParameterExpressionCollection.cs" />
+    <Compile Include="Expressions\EditableTypeBinaryExpression.cs" />
+    <Compile Include="Expressions\EditableUnaryExpression.cs" />
+    <Compile Include="Expressions\ExpressionExtensions.cs" />
+    <Compile Include="Expressions\IEditableExpression.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\ExtensionPoint.cs" />
+    <Compile Include="Events\IObservable.cs" />
+    <Compile Include="Extensions\FuncExtensions.cs" />
+    <Compile Include="Extensions\IExtensionPoint.cs" />
+    <Compile Include="Extensions\IExtensionPoint.Generic.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="ReadOnlyException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serializable.Silverlight.cs" />
+    <Compile Include="Threading\SilverLightReaderWriterLock.cs" />
+    <Compile Include="Reflection\TypeExtensions.cs" />
+    <Compile Include="Extensions\ValueType\ByteSupport.cs" />
+    <Compile Include="Extensions\ValueType\EnumSupport.cs" />
+    <Compile Include="Extensions\ValueType\Int32Support.cs" />
+    <Compile Include="Extensions\ValueType\IValueSupport.cs" />
+    <Compile Include="Extensions\ValueType\IValueSupport.Generic.cs" />
+    <Compile Include="Extensions\ValueType\ValueSupport.cs" />
+    <Compile Include="Extensions\ValueType\ValueSupport.Generic.cs" />
+    <Compile Include="Extensions\ValueType\ValueSupportExtensions.cs" />
+    <Compile Include="Factories\ArgumentsContract.cs" />
+    <Compile Include="Factories\FactoryExtensions.cs" />
+    <Compile Include="Factories\IFactory.cs" />
+    <Compile Include="LazyBehavior.cs" />
+    <Compile Include="Messages\ObservableMessage.cs" />
+    <Compile Include="Reflection\BindingBehavior.cs" />
+    <Compile Include="Reflection\BindingContract.cs" />
+    <Compile Include="Reflection\DefaultReflectionExtensions.cs" />
+    <Compile Include="Reflection\EventDescriptor.cs" />
+    <Compile Include="Reflection\FieldDescriptor.cs" />
+    <Compile Include="Reflection\IEventDescriptor.cs" />
+    <Compile Include="Reflection\IMemberDescriptor.cs" />
+    <Compile Include="Reflection\IMethodDescriptor.cs" />
+    <Compile Include="Reflection\IReflectionExtensionPoint.cs" />
+    <Compile Include="Reflection\IReflectionExtensions.cs" />
+    <Compile Include="Reflection\IValueMemberDescriptor.cs" />
+    <Compile Include="Reflection\MemberDescriptor.cs" />
+    <Compile Include="Reflection\MemberDescriptorExtensions.cs" />
+    <Compile Include="Reflection\MethodDescriptor.cs" />
+    <Compile Include="Reflection\NestedTypeDescriptor.cs" />
+    <Compile Include="Reflection\ParameterDescriptor.cs" />
+    <Compile Include="Reflection\PropertyDescriptor.cs" />
+    <Compile Include="Reflection\ReflectionExtensionPoint.cs" />
+    <Compile Include="Reflection\ReflectionExtensions.cs" />
+    <Compile Include="Messages\DisposableMessage.cs" />
+    <Compile Include="Messages\IMessage.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Predicates.cs" />
+    <Compile Include="Predicates.Generic.cs" />
+    <Compile Include="Reflection\TypeDescriptor.cs" />
+    <Compile Include="Reflection\ValueMemberDescriptor.cs" />
+    <Compile Include="Reflection\ValueMethodDescriptor.cs" />
+    <Compile Include="RegularExpressions\MatchExtensions.cs" />
+    <Compile Include="Security\AuthorizationServiceExtensions.cs" />
+    <Compile Include="Security\IAuthorizationService.cs" />
+    <Compile Include="Sources\CompositeSource.cs" />
+    <Compile Include="Sources\DisposableSource.cs" />
+    <Compile Include="Sources\EnumerableSource.cs" />
+    <Compile Include="Sources\IDisposableSource.cs" />
+    <Compile Include="Sources\SourceDecorator.cs" />
+    <Compile Include="Tuple.cs" />
+    <Compile Include="Validation\StringValidationExtensions.cs" />
+    <Compile Include="Sources\ReflectionSource.cs" />
+    <Compile Include="Key.cs" />
+    <Compile Include="Messages\Message.cs" />
+    <Compile Include="Messages\MessageBinding.cs" />
+    <Compile Include="Messages\MessageFunc.Generic.cs" />
+    <Compile Include="Messages\MessageExtensions.cs" />
+    <Compile Include="Messages\MessageChain.cs" />
+    <Compile Include="Null.cs" />
+    <Compile Include="NullDisposable.cs" />
+    <Compile Include="Composite\Composite.cs" />
+    <Compile Include="Composite\CompositeExtensions.cs" />
+    <Compile Include="Composite\IComposite.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
+    <Compile Include="Decorator\IDecorator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\SerializationExtensionPoint.cs" />
+    <Compile Include="Serialization\SerializationExtensions.cs" />
+    <Compile Include="Sources\ILazySource.cs" />
+    <Compile Include="Sources\ISource.cs" />
+    <Compile Include="Sources\LazySource.cs" />
+    <Compile Include="Sources\MessageSource.cs" />
+    <Compile Include="Sources\ReadOnlySource.cs" />
+    <Compile Include="Sources\Source.cs" />
+    <Compile Include="Sources\SourceAdapter.cs" />
+    <Compile Include="Sources\SourceExtensions.cs" />
+    <Compile Include="Sources\ThreadLocalSource.cs" />
+    <Compile Include="Sources\WeakSource.cs" />
+    <Compile Include="Threading\ISynchronizable.Generic.cs" />
+    <Compile Include="Threading\ISynchronizableLock.cs" />
+    <Compile Include="Threading\Synchronizable.cs" />
+    <Compile Include="Threading\SynchronizableLock.cs" />
+    <Compile Include="Threading\SynchronizableExtensions.cs" />
+    <Compile Include="Validation\ValidationExtensionPoint.cs" />
+    <Compile Include="Validation\ValidationExtensions.cs" />
+    <Compile Include="Values\ILazyValue.cs" />
+    <Compile Include="Values\IValue.cs" />
+    <Compile Include="Values\LazyValue.cs" />
+    <Compile Include="Values\ReflectionValue.cs" />
+    <Compile Include="Values\Value.cs" />
+    <Compile Include="Values\ValueBinding.cs" />
+    <Compile Include="Values\ValueExtensions.cs" />
+    <Compile Include="Values\ValueSource.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

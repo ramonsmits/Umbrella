@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9FB844CF-52F3-4D1C-9057-61D9DC574DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbrella", "Umbrella\Umbrella.csproj", "{C59AC9D4-2B3B-41CC-B177-FC193B2EAD97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{BBBDB826-5E22-4CD9-B1DC-BBBEEA9FA85C}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\xunit.dll = Lib\xunit.dll
+		Lib\xunitext.dll = Lib\xunitext.dll
+		Lib\xunitext35.dll = Lib\xunitext35.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbrella.Tests", "Umbrella.Tests\Umbrella.Tests.csproj", "{AA5F2437-041E-48F0-8433-43B8F50AFC78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbrella.Data.Services.Client", "Umbrella.Data.Services.Client\Umbrella.Data.Services.Client.csproj", "{2DAC90BE-F378-4FF0-B76F-173FF19D263B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs07.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Umbrella\\Umbrella.csproj
+		SccProjectName1 = Umbrella
+		SccLocalPath1 = Umbrella
+		SccProjectUniqueName2 = Umbrella.Tests\\Umbrella.Tests.csproj
+		SccProjectName2 = Umbrella.Tests
+		SccLocalPath2 = Umbrella.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C59AC9D4-2B3B-41CC-B177-FC193B2EAD97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59AC9D4-2B3B-41CC-B177-FC193B2EAD97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59AC9D4-2B3B-41CC-B177-FC193B2EAD97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59AC9D4-2B3B-41CC-B177-FC193B2EAD97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5F2437-041E-48F0-8433-43B8F50AFC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5F2437-041E-48F0-8433-43B8F50AFC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5F2437-041E-48F0-8433-43B8F50AFC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5F2437-041E-48F0-8433-43B8F50AFC78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DAC90BE-F378-4FF0-B76F-173FF19D263B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAC90BE-F378-4FF0-B76F-173FF19D263B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAC90BE-F378-4FF0-B76F-173FF19D263B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAC90BE-F378-4FF0-B76F-173FF19D263B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBBDB826-5E22-4CD9-B1DC-BBBEEA9FA85C} = {9FB844CF-52F3-4D1C-9057-61D9DC574DD9}
+	EndGlobalSection
+EndGlobal
