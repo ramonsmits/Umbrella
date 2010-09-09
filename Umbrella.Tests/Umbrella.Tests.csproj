@@ -12,10 +12,14 @@
     <AssemblyName>nVentive.Umbrella.Tests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <StartupObject>
     </StartupObject>
   </PropertyGroup>
@@ -137,7 +141,7 @@
     <Compile Include="Values\ValueFixture.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\Umbrella\Umbrella.csproj">
+    <ProjectReference Include="..\Umbrella\Umbrella.csproj">
       <Project>{C59AC9D4-2B3B-41CC-B177-FC193B2EAD97}</Project>
       <Name>Umbrella</Name>
     </ProjectReference>
